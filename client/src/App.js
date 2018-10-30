@@ -23,7 +23,7 @@ import StockSearchList from './components/stockSearchList';
 
 class ChartComponent extends React.Component {
 	componentDidMount() {
-		getData().then(data => {
+		getData("FB").then(data => {
 			this.setState({ data })
 		})
 	}
