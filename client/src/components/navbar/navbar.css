@@ -2,3 +2,6 @@ span ul .dropdown-content{
   position: absolute;
   top: -64px;
 }
+.nav-wrapper {
+  background-color: darkslategrey;
+}

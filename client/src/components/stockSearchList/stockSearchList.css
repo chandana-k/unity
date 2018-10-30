@@ -1,0 +1,7 @@
+.stock-list-container {
+    margin: 0 2.5rem;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  

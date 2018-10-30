@@ -22,6 +22,17 @@
   color: #61dafb;
 }
 
+/* SEARCH */
+.App input[type=text] {
+  width: 90%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.App .nav{
+  background-color: #21ce99;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,3 +41,4 @@
     transform: rotate(360deg);
   }
 }
+

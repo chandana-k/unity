@@ -1,0 +1,24 @@
+  .stock-search-bar {
+    margin: 2.5rem;
+    }
+    
+    .search-stockbar-input {
+      outline: none;
+      width: 50%;
+      height: 35px;
+    }
+
+    button.search-stockbar-button {
+      text-transform: uppercase;
+      color: black;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      .search-stockbar-input {
+       width: 65%;
+      }
+    }
+    
