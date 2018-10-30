@@ -7,7 +7,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import axios from 'axios';
 
 const styles = {
   card: {
@@ -31,18 +30,6 @@ function StockItem(props) {
   const { classes } = props;
   const bull = <span className={classes.bullet}>•</span>;
   
-  addToWatchList = () => {
-    const stock = {
-      ticker: props.stock.symbol,
-      name: props.stock.companyName,
-      sector: props.stock.sector,
-      price: props.stock.latestPrice
-    };
-  
-    axios.post("/watchlist/saved", stock)
-        .then(res => console.log("stock saved!"))
-        .catch(err => console.log(err));
-  }
   return (
     <Card className={classes.card}>
       <CardContent>
@@ -60,7 +47,7 @@ function StockItem(props) {
         <Button size="small" color="primary">
           {props.stock.latestPrice}
         </Button>
-        <span onClick={this.addToWatchList} className="waves-effect waves-light btn circle right #4fc3f7 light-blue lighten-2">
+        <span className="waves-effect waves-light btn circle right #4fc3f7 light-blue lighten-2">
           <i className="tiny material-icons">add</i>
         </span>
       </CardActions>
